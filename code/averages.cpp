@@ -1,4 +1,4 @@
-void averageTemperature(float temperature[][366], int numberOfYears, float treshold, float averageTemperatureArray[])
+void averageTemprature(float temperature[][366], int numberOfYears, float treshold, float averageTemperatureArray[])
 {
 	int daysConsidered;
 	for(int year=0;year<numberOfYears;year++)

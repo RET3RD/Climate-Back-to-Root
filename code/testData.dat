@@ -1,0 +1,28 @@
+Stationsnamn;Klimatnummer;Mäthöjd (meter över marken)
+Falun-Lugnet;105370;2.0
+
+Parameternamn;Beskrivning;Enhet
+Lufttemperatur;momentanvärde, 1 gång/tim;degree celsius
+
+Tidsperiod (fr.o.m);Tidsperiod (t.o.m);Höjd (meter över havet);Latitud (decimalgrader);Longitud (decimalgrader)
+2006-06-01 00:00:00;2015-11-30 23:59:59;140.0;60.619;15.6603
+1983-03-01 00:00:00;2006-01-12 23:59:59;160.0;60.6219;15.6235
+1951-03-01 00:00:00;1982-12-31 23:59:59;122.0;60.6219;15.6235
+
+Datum;Tid (UTC);Lufttemperatur;Kvalitet;;Tidsutsnitt:
+1951-03-25;12:00:00;4.7;G;;Kvalitetskontrollerade historiska data (utom de senaste 3 mån)
+1951-03-31;12:00:00;4.2;G;;Tidsperiod (fr.o.m.) = 1951-03-01 00:00:00 (UTC)
+1951-04-01;12:00:00;3.8;G;;Tidsperiod (t.o.m.) = 2015-09-01 06:00:00 (UTC)
+1951-04-05;12:00:00;3.4;G;;Samplingstid = Ej angivet
+1951-04-06;12:00:00;4.3;G;;
+1951-04-07;12:00:00;6.9;G;;Kvalitetskoderna:
+1951-04-08;12:00:00;4.0;G;;Grön (G) = Kontrollerade och godkända värden.
+1951-04-08;18:00:00;3.3;G;;Gul (Y) = Misstänkta eller aggregerade värden. Grovt kontrollerade arkivdata och okontrollerade realtidsdata (senaste 2 tim).
+1951-04-09;12:00:00;4.7;G;;
+1951-04-09;18:00:00;3.9;G;;Orsaker till saknade data:
+1951-04-10;12:00:00;6.1;G;;  stationen eller givaren har varit ur funktion.
+1951-04-11;12:00:00;5.8;G;;  kvalitetskontrollerna har felmarkerat data (röd kvalitetskod). Efterföljande manuell granskning godkänner, rättar eller underkänner data.
+1951-04-11;18:00:00;3.6;G
+1951-04-12;12:00:00;8.2;G
+1951-04-12;18:00:00;4.4;G
+1951-04-13;12:00:00;6.0;G

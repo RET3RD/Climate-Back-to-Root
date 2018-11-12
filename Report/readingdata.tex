@@ -1,0 +1,4 @@
+
+\section*{Reading Data}
+The readData() function reads the data from the file and gets other important information such as the first recorded year and the number of years recorded. The function will start of by reading the header in all the data files except Uppsala (since they had a different data format.) and then discard it since it is not useful information for the program to read in.  Once this is done we start to actually read in the data properly with \texttt{input file stream}. Here the information we get will be presented in a two dimensional array where the first index is the year, the second index is the day and the number stored is the temperature of that day that year. In the function the \texttt{startYear} is obtained as well as the number of fully recorded years. 
+

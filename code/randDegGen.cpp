@@ -2,7 +2,7 @@
 #include <TMath.h>	 // math functions
 #include <TRandom.h> // random number generator
 #include <TGraph.h>
-void randDegGen(float randDegArr[][366],int yearSpan)
+void randDegGen(double randDegArr[][366],int yearSpan)
 {
 	TF1* sinSqAve = new TF1("Avg Temperature according squared sin"," 15*sin( TMath::Pi()*x/366 )^2 +3",0,366); //so on the mean the highest Temp is 18 and the lowest is 3
 	TF1* gaussDev = new TF1("Gaussian Temperature deviation","gaus(0)",-10,10); //range to fetch tempDeviation from (maxDev can not exceed 6deg)

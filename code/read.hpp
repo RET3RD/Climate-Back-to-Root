@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdlib> //for atoi() and atof()
+#include <stdio.h>
 
 using namespace std;
 
@@ -121,4 +123,25 @@ void readUppsala(char* filename, double dataArray[][366], int& numberOfYears, in
 	}
 	fileIn.close();
 	return;
+}
+
+double readLatitude(char* filename)
+{
+	ifstream readFile(filename);
+		
+	char extrSnippet[250]; //temporary char array with large size to prevent overflow
+	char* nullOrNot=NULL; //initialize a test pointer to 0
+	while( !readFile.eof() )
+	{
+		readFile.getline(extrSnippet, 250,';'); //reads everything before ';' into extrSnippet
+		nullOrNot=strstr(extrSnippet,"Latitud"); //gives the pointer where it found the string "Latitud". returns NULL pointer if nothing found
+		if(nullOrNot) break; //if nullOrNot is not a NULL pointer
+	}
+	if ( !nullOrNot ) cout<<"Something went wrong retrieving the latitude.";
+	readFile.getline(extrSnippet, 250); //effectively to switch to the next line because default delim is \n
+	for(int pos=1; pos<5; pos++) //read out at 4th position which corresponds to latitude
+	{
+		readFile.getline(extrSnippet, 250, ';');
+	}
+	return atof(extrSnippet);
 }
